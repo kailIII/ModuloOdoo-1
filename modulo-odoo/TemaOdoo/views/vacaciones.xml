@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+<data>
+
+<!--Añadimos una nueva pagina en este xml-->
+<template name="vacaciones" id="website.vacaciones" page="True">
+  <t t-call="website.layout">
+   <div id="wrap">
+       <!---->
+     <div class="fondo">
+       <h1>VACACIONES</h1>
+		<field name="body_html">
+    		<![CDATA[<img  src="/odoo/static/img/playa.jpg"/>]]>
+		</field>
+       <!-- === Snippets' area === -->
+       <div class="oe_structure" />
+     </div>
+   </div>
+  </t>
+</template>
+
+<record id="vacaciones_menu" model="website.menu">
+  <field name="name">Vacaciones</field>
+  <field name="url">/page/vacaciones</field>
+  <field name="parent_id" ref="website.main_menu" />
+  <field name="sequence" type="int">100</field>
+</record>
+
+</data>
+</openerp>

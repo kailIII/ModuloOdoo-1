@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 
-from openerp import models, fields, api
+  from openerp import models, fields, api
 
-# class openacademy(models.Model):
-#     _name = 'openacademy.openacademy'
+  class openacademy(models.Model):
+      _name = 'openacademy.openacademy'
 
-#     name = fields.Char()
+      name = fields.Char(String="Title", required=True)
 #     value = fields.Integer()
 #     value2 = fields.Float(compute="_value_pc", store=True)
-#     description = fields.Text()
+      description = fields.Text()
 #
 #     @api.depends('value')
 #     def _value_pc(self):
